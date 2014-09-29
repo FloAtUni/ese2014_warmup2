@@ -1,8 +1,8 @@
 package org.sample.model.dao;
 
-import org.sample.model.User;
+import org.sample.model.Team;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserDao extends CrudRepository<User,Long> {
-	
+public interface TeamDao extends CrudRepository<Team,Long> {
+
 }

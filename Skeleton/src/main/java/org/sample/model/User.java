@@ -18,7 +18,10 @@ public class User {
     private String email;
     
     @OneToOne
-    private Address address; 
+    private Address address;
+    
+    @OneToOne
+    private Team team;
     
     public Long getId() {
         return id;
@@ -60,7 +63,13 @@ public class User {
 		this.address = address;
 	}
 
-    
+	public Team getTeam() {
+		return team;
+	}
+
+	public void setTeam(Team team) {
+		this.team = team;
+	}
 	
 	
 }
