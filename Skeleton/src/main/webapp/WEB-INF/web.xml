@@ -9,7 +9,7 @@
     <welcome-file-list>
         <welcome-file>index</welcome-file>
     </welcome-file-list>
-        
+
     
     <!-- import config files -->    
     <context-param>

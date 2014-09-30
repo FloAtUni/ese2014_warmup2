@@ -1,11 +1,13 @@
 package org.sample.controller.pojos;
 
+import java.util.Date;
+
 import javax.validation.constraints.NotNull;
 
 public class TeamSignupForm {
 	
 	private Long id;
-    private String creationDate;
+    private Date creationDate;
 
     @NotNull
     private String name;
@@ -19,11 +21,11 @@ public class TeamSignupForm {
         this.name = name;
     }
     
-    public String getCreationDate() {
+    public Date getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(String creationDate) {
+    public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
 

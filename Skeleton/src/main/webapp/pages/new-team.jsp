@@ -6,17 +6,17 @@
 <c:import url="template/header.jsp" />
 
 
-<form:form method="post" modelAttribute="signupForm" action="create" id="teamSignupForm" cssClass="form-horizontal"
+<form:form method="post" modelAttribute="teamSignupForm" action="createNewTeam" id="teamSignupForm" cssClass="form-horizontal"
            autocomplete="off">
     <fieldset>
         <legend>Enter Your Information</legend>
 
-        <c:set var="groupNameErrors"><form:errors path="groupName"/></c:set>
-        <div class="control-group<c:if test="${not empty groupNameErrors}"> error</c:if>">
-            <label class="control-label" for="field-groupName">Group Name</label>
+        <c:set var="nameErrors"><form:errors path="name"/></c:set>
+        <div class="control-group<c:if test="${not empty nameErrors}"> error</c:if>">
+            <label class="control-label" for="field-teamName">Team Name</label>
             <div class="controls">
-                <form:input path="groupName" id="field-groupName" tabindex="2" maxlength="35" placeholder="Group Name"/>
-                <form:errors path="groupName" cssClass="help-inline" element="span"/>
+                <form:input path="name" id="field-teamName" tabindex="2" maxlength="35" placeholder="Team Name"/>
+                <form:errors path="name" cssClass="help-inline" element="span"/>
             </div>
         </div>
 

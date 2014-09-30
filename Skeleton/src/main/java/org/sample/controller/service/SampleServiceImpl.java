@@ -2,6 +2,7 @@ package org.sample.controller.service;
 
 import org.sample.controller.pojos.SignupForm;
 import org.sample.controller.pojos.TeamSignupForm;
+import org.sample.exceptions.InvalidTeamException;
 import org.sample.exceptions.InvalidUserException;
 import org.sample.model.Address;
 import org.sample.model.Team;
@@ -67,7 +68,7 @@ public class SampleServiceImpl implements SampleService {
     	String name = teamSignupForm.getName();
 
         if(!StringUtils.isEmpty(name) && "ESE".equalsIgnoreCase(name)) {
-            throw new InvalidUserException("Sorry, ESE is not a valid name");   // throw exception
+            throw new InvalidTeamException("Sorry, ESE is not a valid name");   // throw exception
         }
 
         Team team = new Team();
