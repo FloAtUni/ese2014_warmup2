@@ -44,7 +44,7 @@
         <div class="control-group<c:if test="${not empty teamErrors}"> error</c:if>">
             <label class="control-label" for="field-team">Team</label>
             <div class="controls">
-               	<form:select path="team" id="field-team" tabindex="3">
+               	<form:select path="team" id="field-team" tabindex="4">
 			        <form:option value="">- Select team -</form:option>
 			        <c:forEach items="${teams}" var="teams">
 			          <form:option value="${teams.id}">${teams.name}</form:option>

@@ -9,7 +9,7 @@
 <form:form method="post" modelAttribute="teamSignupForm" action="createNewTeam" id="teamSignupForm" cssClass="form-horizontal"
            autocomplete="off">
     <fieldset>
-        <legend>Enter Your Information</legend>
+        <legend>Enter A New Team</legend>
 
         <c:set var="nameErrors"><form:errors path="name"/></c:set>
         <div class="control-group<c:if test="${not empty nameErrors}"> error</c:if>">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Sign up group</button>
+            <button type="submit" class="btn btn-primary">Sign up team</button>
             <button type="button" class="btn">Cancel</button>
         </div>
     </fieldset>
